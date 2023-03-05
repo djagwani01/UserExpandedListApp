@@ -1,0 +1,102 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 0 auto;
+  background-color: #f1f1f1;
+  box-shadow: 0px 2px 2px 1px #808080;
+  font-family: sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 2px #808080;
+    margin-bottom: 8px;
+}
+
+.header .title {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-left: 5px;
+}
+
+.usersList {
+  display: flex;
+  flex-direction: column;
+  margin: 8px 12px;
+}
+
+.userCard {
+  display: flex;
+  flex-direction: row;
+  background-color: #FFFFFF;
+  box-shadow: 0px 2px 2px #808080;
+  height: auto;
+  margin-bottom: 16px;
+  padding: 20px;
+}
+
+.userGroup {
+  display: flex;
+  flex-direction: row;
+}
+
+.userInfo {
+  margin: 5px 0 0 20px;
+}
+
+.userInfo .userName {
+  font-size: 12px;
+  font-weight: 600;
+  color: #4A4A4A;
+}
+
+.userInfo .userRole {
+  font-size: 10px;
+  color: #4A4A4A;
+}
+
+.userInfo .userEmail {
+  font-size: 10px;
+  margin-top: 3px;
+  color: #7E7E7E;
+}
+
+.dropDownLogo {
+  cursor: pointer;
+  margin: 10px 0 0 auto;
+}
+
+.userDetailsCard {
+  margin-top: 25px;
+  font-size: 10px;
+  color: #4A4A4A;
+}
+
+.userDetailsCard > div {
+  margin-bottom: 10px;
+}
+
+.detailsHeader {
+  font-weight: 600;
+}
+
+.adminColor {
+  filter: invert(50%) sepia(100%) saturate(3500%) hue-rotate(180deg)
+  brightness(72%) contrast(100%) opacity(0.9);
+}
+
+.userColor {
+  filter: invert(70%) sepia(70%) saturate(1800%) hue-rotate(130deg)
+  brightness(80%) contrast(40%) opacity(0.9);
+}
+
+.viewerColor {
+  filter: invert(20%) sepia(70%) saturate(1800%) hue-rotate(250deg)
+  brightness(20%) contrast(20%) opacity(0.9);
+}
