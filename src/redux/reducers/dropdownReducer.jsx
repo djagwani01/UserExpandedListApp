@@ -10,8 +10,12 @@ export const dropdownSlice = createSlice({
         updateDropDown: (state, action) => {
             state.dropDownId = action.payload,
             state.setDropDown = !state.setDropDown
+        },
+        updatePrevDropDown: (state) => {
+            state.dropDownId = null,
+            state.setDropDown = false
         }
     }
 })
 
-export const { updateDropDown } = dropdownSlice.actions
+export const { updateDropDown, updatePrevDropDown } = dropdownSlice.actions

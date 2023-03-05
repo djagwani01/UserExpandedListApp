@@ -1,4 +1,4 @@
-export default {
+const constants = {
     USERS: "users",
     USERSGROUPICON: "/assets/group.svg",
     USERSGROUPALT: "GroupLogo",
@@ -16,3 +16,5 @@ export default {
     USER: "User",
     VIEWER: "Viewer"
 };
+
+export default constants;
