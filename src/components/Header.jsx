@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import styles from '@/styles/Index.module.css';
 import Image from 'next/image';
 
@@ -19,4 +20,10 @@ export const Header = (props) => {
             </div>
         </>
     )
+}
+
+Header.propTypes = {
+    title: PropTypes.string.isRequired,
+    iconPath: PropTypes.string.isRequired,
+    iconAlt: PropTypes.string.isRequired
 }

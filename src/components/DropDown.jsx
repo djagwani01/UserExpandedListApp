@@ -1,4 +1,4 @@
-import styles from '@/styles/Index.module.css'
+import PropTypes from 'prop-types';
 import Image from "next/image";
 import { useDispatch, useSelector } from "react-redux";
 import { updateDropDown, updatePrevDropDown } from "../redux/reducers/dropdownReducer";
@@ -27,4 +27,8 @@ export const DropDown = (props) => {
             onClick={() => onSetDropDown()}
         />
     )
+}
+
+DropDown.propTypes = {
+    id: PropTypes.string.isRequired
 }

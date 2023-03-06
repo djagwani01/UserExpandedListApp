@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import Image from "next/image";
 import styles from '@/styles/Index.module.css';
 import constants from "../utils/constants";
@@ -56,4 +57,8 @@ export const User = (props) => {
             </div>
         </>
     )
+}
+
+User.propTypes = {
+    user: PropTypes.object.isRequired
 }
